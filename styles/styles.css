@@ -33,16 +33,16 @@ header p {
 }
 
 /* Reusable Image Styling */
-.responsive-img {
-    width: 100%; /* Ensure full-width, but maintain aspect ratio */
-    height: auto; /* Prevent stretching */
-    max-width: 400px; /* Limit the width */
+img {
+    width: 100%; /* Ensure full-width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 400px; /* Limit the width to avoid oversized images */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
 
-.responsive-img:hover {
+img:hover {
     transform: scale(1.05);
 }
 
@@ -72,32 +72,26 @@ header p {
     border: 5px solid #E39A91;
 }
 
-/* Family Section */
-.family {
+/* Section Styling */
+section {
     text-align: center;
-    background: #D5B29C;
     padding: 40px;
     margin: 30px auto;
     width: 80%;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #D5B29C;
     color: white;
     transition: transform 0.3s ease;
 }
 
-.family:hover {
+section:hover {
     transform: scale(1.05);
 }
 
 /* Gallery Section */
 .gallery {
-    text-align: center;
-    padding: 40px;
-    background: #E39A91;
-    margin: 30px auto;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #E39A91;
 }
 
 .gallery h2 {
@@ -114,19 +108,14 @@ header p {
 }
 
 .image-container img {
-    width: 30%; /* General size for gallery images */
+    width: 30%;
     max-width: 400px;
+    margin-bottom: 20px;
 }
 
 /* Contact Section */
 .contact {
-    text-align: center;
-    background: #F6EEE1;
-    padding: 40px;
-    margin: 30px auto;
-    width: 80%;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #F6EEE1;
 }
 
 .contact h2 {
