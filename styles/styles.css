@@ -40,45 +40,7 @@ header p {
     font-weight: 300;
 }
 
-/* Profile Section */
-.profile {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    margin: 20px 0;
-    flex-wrap: wrap;
-}
-
-.profile img {
-    width: 180px;
-    height: 230px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 20px;
-    float: left;
-    margin-bottom: 15px;
-}
-
-.profile .info {
-    max-width: 600px;
-}
-
-.profile h2 {
-    color: #1B415F; /* Deep blue */
-    margin-bottom: 10px;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.profile p {
-    margin: 10px 0;
-    font-size: 1rem;
-    color: #0D0908; /* Dark text */
-    line-height: 1.8;
-}
-
-/* Section Styles */
+/* Section Styling */
 section {
     padding: 30px;
     margin: 20px 0;
@@ -97,50 +59,95 @@ section p {
     color: #0D0908; /* Dark text */
 }
 
+/* Personal Info Section */
+.personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.personal-info img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.personal-info .info {
+    max-width: 600px;
+}
+
+.personal-info p {
+    font-size: 1rem;
+}
+
 /* Family Section */
 .family {
     background-color: #E8D6C6; /* Light beige */
     padding: 30px;
-}
-
-.family h2 {
-    color: #1B415F; /* Deep blue */
-    margin-bottom: 15px;
-    font-weight: 600;
+    text-align: center;
 }
 
 .family img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Image Gallery */
-.image-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.image-container img {
-    width: 230px;
-    height: 180px;
+    width: 250px;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.image-container img:hover {
-    transform: scale(1.05);
+/* Hometown Section */
+.hometown img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Mission Section */
+.mission img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Hobbies Section */
+.hobbies img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Section Button */
+.section-btn {
+    background-color: #1B415F; /* Deep blue */
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.section-btn:hover {
+    background-color: #634C3E; /* Muted brown */
+}
+
+/* Section Content (initially hidden) */
+.section-content {
+    display: none;
 }
 
 /* Contact Section */
@@ -180,26 +187,30 @@ footer p {
 
 /* Media Queries */
 @media (max-width: 768px) {
-    .profile {
+    .personal-info {
         flex-direction: column;
         text-align: center;
     }
 
-    .profile img {
+    .personal-info img {
         margin: 20px 0;
         float: none; /* Remove float on smaller screens */
     }
 
-    .image-container {
-        flex-direction: column;
-        align-items: center;
+    .family img, .hometown img, .mission img, .hobbies img {
+        width: 220px;
+        height: 220px;
+    }
+
+    section {
+        padding: 20px;
     }
 
     .contact ul li {
         font-size: 1rem;
     }
 
-    section {
-        padding: 20px;
+    .section-btn {
+        width: 100%;
     }
 }
