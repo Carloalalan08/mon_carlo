@@ -93,6 +93,25 @@ section ul li {
     margin-bottom: 10px;
 }
 
+/* Family Section */
+.family {
+    padding: 40px;
+    background-color: #D5B29C;
+    color: #3C2A21;
+}
+
+.family h2 {
+    color: #895E3B;
+}
+
+.family img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
 /* Image Gallery */
 .image-container {
     display: flex;
