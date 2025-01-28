@@ -15,6 +15,7 @@ body {
 
 h1, h2 {
     font-family: 'Playfair Display', serif;
+    transition: color 0.3s ease;
 }
 
 h1 {
@@ -35,29 +36,8 @@ header h1 {
 
 header p {
     font-size: 1.5rem;
-}
-
-/* Button for Section Toggling */
-button.section-btn {
-    background-color: #895E3B;
-    color: #fff;
-    border: none;
-    padding: 15px;
-    width: 100%;
-    text-align: left;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-button.section-btn:hover {
-    background-color: #E39A91;
-}
-
-/* Section Content */
-.section-content {
-    display: none;
-    margin-top: 15px;
+    margin-top: 10px;
+    font-weight: 300;
 }
 
 /* Profile Section */
@@ -70,11 +50,16 @@ button.section-btn:hover {
 }
 
 .profile img {
-    width: 200px;
-    height: 250px;
+    width: 180px;
+    height: 230px;
     object-fit: cover;
     border-radius: 8px;
     margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
 
 .profile .info {
@@ -84,47 +69,49 @@ button.section-btn:hover {
 .profile h2 {
     color: #895E3B;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
 }
 
 .profile p {
     margin: 10px 0;
+    font-size: 1.1rem;
+    color: #3C2A21;
 }
 
 /* Section Styles */
 section {
     padding: 40px;
     margin: 20px 0;
+    background-color: #E39A91;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     font-size: 2.5rem;
     color: #895E3B;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 section p {
     font-size: 1.2rem;
     margin-bottom: 15px;
-}
-
-section ul {
-    margin-left: 20px;
-    font-size: 1.1rem;
-}
-
-section ul li {
-    margin-bottom: 10px;
+    color: #3C2A21;
 }
 
 /* Family Section */
 .family {
-    padding: 40px;
     background-color: #D5B29C;
-    color: #3C2A21;
 }
 
 .family h2 {
     color: #895E3B;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 .family img {
@@ -133,6 +120,11 @@ section ul li {
     height: auto;
     border-radius: 8px;
     margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.family img:hover {
+    transform: scale(1.05); /* Slight zoom effect for family image */
 }
 
 /* Image Gallery */
@@ -141,6 +133,7 @@ section ul li {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .image-container img {
@@ -149,6 +142,13 @@ section ul li {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Contact Section */
@@ -164,6 +164,7 @@ section ul li {
 .contact ul li a {
     text-decoration: none;
     color: #895E3B;
+    transition: color 0.3s ease;
 }
 
 .contact ul li a:hover {
