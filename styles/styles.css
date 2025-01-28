@@ -11,6 +11,7 @@ body {
 h1, h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
+    margin-bottom: 20px;
 }
 
 /* Header */
@@ -24,11 +25,11 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 300;
 }
 
@@ -73,6 +74,15 @@ img:hover {
     border: 5px solid #E39A91;
 }
 
+.profile .info {
+    text-align: left;
+}
+
+.profile .info p {
+    font-size: 1.2em; /* Slightly increased font size for better readability */
+    color: #4A3B32; /* Darker text for better contrast */
+}
+
 /* Section Styling */
 section {
     text-align: center;
@@ -90,20 +100,30 @@ section:hover {
     transform: scale(1.05);
 }
 
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.3em;
+    color: #4A3B32; /* Darker text for better readability */
+    margin-bottom: 20px;
+}
+
 /* Family Section */
 .family {
     background-color: #E39A91;
 }
 
 .family h2 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: white;
     margin-bottom: 20px;
 }
 
 .family p {
-    font-size: 1.2em;
-    color: #4A3B32; /* Darker text for better readability */
+    font-size: 1.4em;
 }
 
 /* Gallery Section */
@@ -112,7 +132,7 @@ section:hover {
 }
 
 .gallery h2 {
-    font-size: 2.5em;
+    font-size: 2.8em;
     color: white;
     margin-bottom: 20px;
 }
@@ -155,7 +175,7 @@ section:hover {
 
 .contact li {
     margin: 15px 0;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .contact a {
@@ -176,7 +196,7 @@ footer {
     color: white;
     padding: 20px;
     margin-top: 40px;
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 /* Responsive Design */
