@@ -37,6 +37,29 @@ header p {
     font-size: 1.5rem;
 }
 
+/* Button for Section Toggling */
+button.section-btn {
+    background-color: #895E3B;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button.section-btn:hover {
+    background-color: #E39A91;
+}
+
+/* Section Content */
+.section-content {
+    display: none;
+    margin-top: 15px;
+}
+
 /* Profile Section */
 .profile {
     display: flex;
