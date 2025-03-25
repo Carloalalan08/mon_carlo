@@ -6,89 +6,94 @@
     <meta name="description" content="Personal About Me Page of Mon Carlo Rellesiva Alalan">
     <title>About Me - Mon Carlo Rellesiva Alalan</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
-    <script>
-        function toggleSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            section.style.display = (section.style.display === "none") ? "block" : "none";
-        }
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script defer src="scripts/scripts.js"></script>
 </head>
 <body>
     <header>
-        <h1>Mon Carlo Rellesiva Alalan</h1>
-        <p>Welcome to my personal page!</p>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/user.svg" alt="Logo" class="logo">
+            </div>
+            <div class="title-container">
+                <h1>Mon Carlo Rellesiva Alalan</h1>
+                <p class="subtitle">Personal Portfolio & Journey</p>
+            </div>
+        </div>
     </header>
-
     <main>
-        <!-- Personal Info Section -->
-        <section class="personal-info">
+        
+        <section class="content">
             <button class="section-btn" onclick="toggleSection('personal')">Personal Info</button>
             <div id="personal" class="section-content">
-                <img src="images/mission1.jpg" alt="Profile Picture">
-                <div class="info">
-                    <p>My name is <strong>Mon Carlo Rellesiva Alalan</strong>. I'm <strong>22 years old</strong>. I was born on <strong>July 03, 2002</strong> in <strong>Baler, Aurora, Philippines</strong>.</p>
-                    <p>I belong to <strong>The Church of Jesus Christ of Latter-day Saints</strong>. I was baptized on <strong>November 13, 2010</strong>.</p>
+                <div class="image-gallery">
+                    <img src="images/me.jpg" alt="Profile Picture" class="content-img">
                 </div>
+                <p>My name is <strong>Mon Carlo Rellesiva Alalan</strong>. I'm <strong>22 years old</strong>. I was born in <strong>Baler, Aurora, Philippines</strong>.</p>
             </div>
-        </section>
-
-        <!-- Family Section -->
-        <section class="family">
+            
             <button class="section-btn" onclick="toggleSection('family')">Family</button>
             <div id="family" class="section-content">
-                <p>My parents are <strong>Cesario Parallon Alalan Jr.</strong> and <strong>Liza Marie Rellesiva Alalan</strong>.</p>
-                <p>I have <strong>9 siblings</strong>, and I am the <strong>fourth child</strong>. The oldest among us is the only girl.</p>
-                <img src="images/family.jpg" alt="Family Picture">
+                <img src="images/family.jpg" alt="Family Picture" class="content-img">
+                <img src="images/family1.jpg" alt="Family Picture" class="content-img">
+                <p>My parents are <strong>Cesario Parallon Alalan Jr.</strong> and <strong>Liza Marie Rellesiva Alalan</strong>. I have <strong>9 siblings</strong>, and I am the <strong>fourth child</strong>.</p>
             </div>
-        </section>
-
-        <!-- Hometown Section -->
-        <section class="hometown">
-            <button class="section-btn" onclick="toggleSection('hometown')">Hometown</button>
-            <div id="hometown" class="section-content">
-                <p>I was born and raised in <strong>Baler, Aurora</strong>, a beautiful coastal town in the Philippines known for its scenic beaches, rich history, and friendly people.</p>
-                <img src="images/beach1.jpg" alt="Baler Beach">
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section class="education">
+            
             <button class="section-btn" onclick="toggleSection('education')">Education</button>
             <div id="education" class="section-content">
-                <p>I graduated from high school in <strong>2020</strong>, and I am currently pursuing a degree in <strong>Computer Science</strong> at the <strong>University of the Philippines</strong>.</p>
+                <div class="image-gallery">
+                    <img src="images/graduationSHS.jpg" alt="Gradation Image" class="content-img">
+                    <img src="https://source.unsplash.com/800x500/?library,study" alt="Education Image 2" class="content-img">
+                </div>
+                <p>I am currently pursuing a degree in <strong>Computer Science</strong> at the <strong>University of the Philippines</strong>.</p>
             </div>
-        </section>
 
-        <!-- Mission Section -->
-        <section class="mission">
-            <button class="section-btn" onclick="toggleSection('mission')">Mission</button>
-            <div id="mission" class="section-content">
-                <p>I served a <strong>Full-time mission</strong> at the <strong>Philippines Olongapo Mission</strong> from <strong>March 03, 2022</strong> to <strong>March 15, 2024</strong>. It was an incredible experience, and I learned a lot about service, faith, and leadership.</p>
-                <img src="images/mission.JPG" alt="Mission Picture">
-            </div>
-        </section>
-
-        <!-- Hobbies Section -->
-        <section class="hobbies">
             <button class="section-btn" onclick="toggleSection('hobbies')">Hobbies</button>
             <div id="hobbies" class="section-content">
-                <p>In my free time, I enjoy <strong>playing video games</strong>, <strong>reading books</strong>, and <strong>traveling</strong>. I also love exploring new hobbies, such as photography and hiking.</p>
+                <div class="image-gallery">
+                    <img src="images/basketball.jpg " alt="Hobby Image" class="content-img">
+                    <img src="images/hobby_beach.jpg" alt="Hobby Image 2" class="content-img">
+                    <img src="images/beach.jpg" alt="Hobby Image 2" class="content-img">
+                </div>
+                <p>In my free time, I enjoy <strong>playing video games</strong>, <strong>reading books</strong>, and <strong>traveling</strong>. I also love photography and hiking.</p>
             </div>
-        </section>
 
-        <!-- Contact Section -->
+            <button class="section-btn" onclick="toggleSection('mission')">Teaching Missionary</button>
+            <div id="mission" class="section-content">
+                <div class="image-gallery">
+                    <img src="images/finish_mission.JPG" alt="Finish of Service" class="content-img">
+                    <img src="images/BeginningoftheMission.jpg" alt="Finish of Service" class="content-img">
+                    <img src="images/Zone_Conference.JPG" alt="Finish of Service" class="content-img">
+                    <img src="images/mission.JPG" alt="Missionary" class="content-img">
+                </div>
+                <p>I had the privilege of serving a full-time mission in the <strong>Philippines Olongapo Mission</strong> from <strong>March 2022 to March 2024</strong>. My assignments took me to <strong>Olongapo and Candelaria, Zambales; Lubao, Pampanga; and Mariveles, Bataan</strong>, where I had the opportunity to serve and uplift the communities.</p>
+                <p>During my mission, I served under the leadership of two dedicated mission presidents, <strong>President and Sister Colton</strong> and <strong>President and Sister Albrecht</strong>. Through faith, service, and personal growth, my mission became an experience that strengthened my testimony and deepened my love for the gospel and the people I served.</p>
+            </div>
+            
+            <button class="section-btn" onclick="toggleSection('clerk')">Branch & District Clerk</button>
+            <div id="clerk" class="section-content">
+                <div class="image-gallery">
+                    <img src="images/district_presidency.jpg" alt="District Clerk Service 1" class="content-img">
+                    <img src="images/church.jpg" alt="Clerk Service 2" class="content-img">
+                </div>
+                <p>I have had the privilege of serving as a Branch Clerk and District Clerk in <strong>The Church of Jesus Christ of Latter-day Saints</strong>. In these roles, I was responsible for maintaining membership records, assisting in financial management, and supporting leaders in administrative tasks**.</p>
+                <p>Through this experience, I developed strong organizational and leadership skills while deepening my dedication to service and faith.</p>
+            </div>
+
+        </section>
         <section class="contact">
             <h2>Contact Me</h2>
-            <p>If you'd like to reach out, feel free to contact me:</p>
             <ul>
-                <li>Email: <a href="mailto:caloycena08@gmail.com">caloycena08</a></li>
-                <li>Phone: +63 962 446 5620</li>
-                <li>Facebook: <a href="https://web.facebook.com/carlo.alalan" target="_blank">My Profile</a></li>
+                <li><img src="images/mail.svg" alt="Email" class="icon"> <a href="mailto:caloycena08@gmail.com">caloycena08@gmail.com</a></li>
+                <li><img src="images/phone.svg" alt="Phone" class="icon"> +63 951 473 8132</li>
+                <li><a href="https://web.facebook.com/carlo.alalan" target="_blank"><img src="images/facebook.svg" alt="Facebook" class="icon"> carlo.alalan</a></li>
+                <li><a href="https://www.linkedin.com/in/mon-carlo-alalan-7539071ba" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" class="icon"> mon-carlo-alalan</a></li>
+                <li><a href="https://github.com/Carloalalan08" target="_blank"><img src="images/github.svg" alt="GitHub" class="icon"> Carloalalan08</a></li>
             </ul>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2025 Mon Carlo Rellesiva Alalan. All rights reserved.</p>
     </footer>
