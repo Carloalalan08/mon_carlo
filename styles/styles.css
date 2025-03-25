@@ -84,6 +84,9 @@ header {
     border-radius: 8px;
     margin: 10px 0;
     border: 1px solid var(--muted-color);
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.6;
 }
 
 img {
@@ -100,6 +103,41 @@ img {
     max-height: 300px;
     object-fit: contain;
     border-radius: 5px;
+}
+
+.image-gallery {
+    display: grid;
+    gap: 10px; /* Spacing between images */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dynamic grid layout for different numbers of images */
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* Ensures uniform height */
+    object-fit: contain; /* Keeps the full image without cropping */
+    border-radius: 5px;
+}
+
+/* Collage Layout for Different Image Counts */
+.image-gallery:has(img:nth-child(3)) {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.image-gallery:has(img:nth-child(2):nth-last-child(1)) {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.image-gallery:has(img:nth-child(4)) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+}
+
+.image-gallery:has(img:nth-child(5)) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
 }
 
 /* Contact Section */
@@ -189,5 +227,9 @@ footer {
         flex-direction: column;
         gap: 5px;
         padding: 15px;
+    }
+
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two images per row on small screens */
     }
 }
